@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html class="light" lang="el"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hidden Pearl Dafnis | Boutique Apartment Athens</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#596373",
+                    "secondary-container": "#d6e0f3",
+                    "tertiary": "#5d5f5b",
+                    "on-primary-fixed": "#00201f",
+                    "surface": "#f7f9ff",
+                    "secondary-fixed-dim": "#bdc7d9",
+                    "on-secondary": "#ffffff",
+                    "background": "#f7f9ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#00504f",
+                    "secondary": "#555f6f",
+                    "on-error": "#ffffff",
+                    "on-background": "#181c20",
+                    "tertiary-fixed-dim": "#c6c7c2",
+                    "tertiary-container": "#c5c5c1",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#121c2a",
+                    "primary-fixed": "#69f7f5",
+                    "inverse-primary": "#45dbd9",
+                    "on-secondary-fixed-variant": "#3d4756",
+                    "inverse-surface": "#2d3135",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#bbc9c8",
+                    "secondary-fixed": "#d9e3f6",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#e3e3de",
+                    "surface-container-highest": "#e0e2e8",
+                    "surface-variant": "#e0e2e8",
+                    "surface-dim": "#d8dadf",
+                    "on-tertiary-fixed": "#1a1c19",
+                    "inverse-on-surface": "#eef1f6",
+                    "outline": "#6c7a79",
+                    "on-tertiary-fixed-variant": "#454744",
+                    "on-surface-variant": "#3c4949",
+                    "primary-container": "#43d9d7",
+                    "surface-tint": "#006a69",
+                    "surface-container-low": "#f1f4f9",
+                    "surface-container": "#eceef3",
+                    "on-primary-container": "#005b5a",
+                    "primary": "#006a69",
+                    "on-surface": "#181c20",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f7f9ff",
+                    "surface-container-high": "#e6e8ee",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#45dbd9",
+                    "on-tertiary-container": "#50524e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .scrim-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+        }
+        details summary::-webkit-details-marker { display:none; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant h-16 flex justify-between items-center px-margin-mobile">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">menu</span>
+<h1 class="font-headline-sm text-headline-sm tracking-tighter text-on-surface uppercase">ATHENS RESIDENCE</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex gap-2 font-label-caps text-label-caps text-secondary">
+<button class="text-primary font-bold">GR</button>
+<span class="w-[1px] h-3 bg-outline-variant self-center"></span>
+<button class="hover:opacity-80 transition-opacity">EN</button>
+</div>
+<button class="bg-on-background text-white px-4 py-2 font-label-caps text-[10px] tracking-widest hover:bg-primary transition-colors">BOOK</button>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative w-full h-[751px] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A high-resolution editorial photograph of a minimalist, luxury boutique apartment interior in Athens. The space features large windows letting in soft morning sunlight, polished wooden floors, a sleek contemporary sofa, and curated local art. The palette is dominated by off-whites and soft greys with a single vibrant teal accent chair. The atmosphere is serene, high-end, and inviting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_VQvtBMd7es65sDl5KXkJnpjQxfbPMz0DgUWiNor2qI2LkLpimuOtFNFWXIKjkwwt-A3xwq6b-_BN2Q57vUUihS4gFjBagUzSITwuqMYRAq99WU6wqWFhbpPh9KULG4SA2Dxujw9wC8B3UmZolsH6l0KzMAOdEx9bh_cGBnoxO7jCkbvqAUk84QmsPUO-mJo0wWWmXj-J0T5lFsxe57PbiKKpS_3fgKLQXBNUwl4nhLYkCSAVqsuCB8PgX2Gu-D52MuXs0OihPQ4')"></div>
+<div class="absolute inset-0 scrim-overlay flex flex-col justify-end p-margin-mobile pb-16 text-white">
+<h2 class="font-display-lg-mobile text-display-lg-mobile mb-4">Ένα κρυφό μαργαριτάρι στην Αθήνα</h2>
+<p class="font-body-lg text-body-lg opacity-90 max-w-md">Μοντέρνο boutique διαμέρισμα στη Δάφνη, λίγα μόλις λεπτά από το κέντρο της Αθήνας.</p>
+</div>
+</section>
+<!-- Property Fact Strip -->
+<section class="bg-surface-container border-b border-outline-variant py-6">
+<div class="max-w-container-max mx-auto px-margin-mobile flex justify-between items-center overflow-x-auto no-scrollbar">
+<div class="flex flex-col items-center min-w-[80px]">
+<span class="material-symbols-outlined text-primary mb-1">square_foot</span>
+<span class="font-label-caps text-label-caps">40m²</span>
+</div>
+<div class="w-[1px] h-8 bg-outline-variant"></div>
+<div class="flex flex-col items-center min-w-[80px]">
+<span class="material-symbols-outlined text-primary mb-1">groups</span>
+<span class="font-label-caps text-label-caps">3 GUESTS</span>
+</div>
+<div class="w-[1px] h-8 bg-outline-variant"></div>
+<div class="flex flex-col items-center min-w-[80px]">
+<span class="material-symbols-outlined text-primary mb-1">bed</span>
+<span class="font-label-caps text-label-caps">1 BED</span>
+</div>
+<div class="w-[1px] h-8 bg-outline-variant"></div>
+<div class="flex flex-col items-center min-w-[80px]">
+<span class="material-symbols-outlined text-primary mb-1">train</span>
+<span class="font-label-caps text-label-caps">250m METRO</span>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-margin-mobile max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] uppercase">The Space</span>
+<h3 class="font-headline-md text-headline-md">Το διαμέρισμα</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Το Hidden Pearl Dafnis είναι ένας χώρος σχεδιασμένος για να προσφέρει ηρεμία και άνεση. Κάθε λεπτομέρεια, από την επιλογή των υλικών μέχρι τον φωτισμό, έχει μελετηθεί για να δημιουργήσει μια αίσθηση "αστικού καταφυγίου". Ιδανικό για ταξιδιώτες που αναζητούν την αυθεντική αθηναϊκή εμπειρία μακριά από τον θόρυβο, αλλά σε άμεση επαφή με το κέντρο.
+                </p>
+<div class="pt-4">
+<button class="border border-on-background px-8 py-3 font-label-caps text-label-caps hover:bg-on-background hover:text-white transition-all uppercase">Check Availability</button>
+</div>
+</div>
+<div class="aspect-[4/5] relative">
+<img class="w-full h-full object-cover rounded-sm shadow-sm" data-alt="A detailed close-up of a boutique apartment interior showing high-end textures: a linen throw on a bed, a marble bedside table with a designer lamp, and a single olive branch in a ceramic vase. The lighting is soft and architectural, highlighting the minimalist and premium design of the Athens residence. The color palette is neutral with soft greens." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASPgci5FZxOQAnr0wJu5CkDYjIP6O-p9xpN3t80kSh1BvwdO_S9l8G2mNkmXkJ606BMoapaW83VR-7E2M4C3D73PHMjZHWPbDeoOY39qheJn7uBJTNkV_y9UN4uiSJRHcKkjfMnVa8xWUiOznmGI0fDCk-nKW33i3YhTlXqTMgKN173UHwFkwqpImEVTAwVVWbpROAdOvaTHP56uu5jfhs9mQRMsg2ERkgv4xQtoZNpRcs4m0a2zemtlVJQxB3EZXeMuCldSmxaMk"/>
+</div>
+</section>
+<!-- Amenities Grid -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="px-margin-mobile max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h3 class="font-headline-md text-headline-md mb-2">Παροχές</h3>
+<div class="h-[1px] w-12 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">ac_unit</span>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">COMFORT</p>
+<p class="font-body-md text-body-md">Air Conditioning</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">cooking</span>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">KITCHEN</p>
+<p class="font-body-md text-body-md">Fully Equipped</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">local_laundry_service</span>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">LAUNDRY</p>
+<p class="font-body-md text-body-md">Washing Machine</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">shower</span>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">BATHROOM</p>
+<p class="font-body-md text-body-md">Premium Toiletries</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">wifi</span>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">CONNECTIVITY</p>
+<p class="font-body-md text-body-md">High-speed WiFi</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">SAFETY</p>
+<p class="font-body-md text-body-md">Smart Lock</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section class="py-section-gap px-margin-mobile max-w-container-max mx-auto">
+<h3 class="font-headline-md text-headline-md mb-8 text-center uppercase tracking-widest">Gallery</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="A wide architectural shot of the living area in a luxury Athens apartment, showcasing minimalist furniture and clean lines. Bright, airy atmosphere." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOypdPM9FNsn5tXNEPwOW7c5hb0nCKSeU49Wt83c150Xa50Vi-dQY2RnZ-_GNWYv4lHWDf5WfyFarlmuzx0Tl1bYzAM9MUbtMmG7BHeuZ5hdyL5PK_6y71CrUJ9U-yM3Lh5I9YY5m7S_zC0BFnrWYTJ3mwTj5vcgzqLr3oc1FqQk_BYkBqgN9tgppGtsnW3U7cxFp--0g0GMs_f5qJbxtXX5C7ZgUTRmpb-CdLSnmBZF0YM7KZD9PUKAAcnQMry2PpygkFpg65KL4"/>
+</div>
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="Close-up of the kitchen counter with high-end coffee maker and designer ceramic mugs. Warm, morning light." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApevpSS28VfKb65qbSbRMk5nkqnvaJ3F5j6QhKaGqPzsJYymD7zaZ9IaGKPzxDgKXoEK2o75uTlAVJk0ivDOyR85ugSzRWApuLsTmcBvapxepzJS_-sA12HgPaaHiIyztu52ZJ8Rhc2BcosvsGgUFXb_5RVlmXi8abfSnvOkwmoPmD4IfpErZ2jwXTiCcXfIoroArbuGJcp0vRXlCAMZBeN5Jc9-ETZ25IYuRkPlAOIGXBnLoe7KSrXCw0rahCwWr8BWObMmSxt3Q"/>
+</div>
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="Detail of the bedroom textile textures: crisp white linen sheets and a textured grey wool blanket." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJU1ETl0uvjJHB5u3AbzIK3Nlh7xxn-XEXVe9dXbRowd91iDm6QbF8a4xB0KRE9QEwvCKP67g7mFroGCIccpJbGTwbePN1taWp0PWj4n650KtFyZLBvz1Rq11TAynw3oZAu6q7u6Cxb1XBWxZiO3H7ZUMD-0v4alI5TrfAdA7OYfvR2cV0EwBEuIX2fGrkSUimB-T1idvS6JcFr7oFH6UJKlUxqSLxIEKM3wDnspKcG8Ee6T9dwGW4oUihkmqyfwZVzVZJCKGNd7M"/>
+</div>
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="The bathroom interior featuring a walk-in rain shower and matte black fixtures against grey stone tiles." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxYtMPCJbxkg63EuO8G1yT8DTwfq5DIIPBxI2PKr6ZYw97qh3XhhgLa_bxbH0ggZyQSJSqsaa7grkZL5AnhkJCu1RjSLOrqZF1QbftQX1bXsgKbJMw5uqsOXKtg2ShLatdBu2noPsk-ezKCgOO9-kvZZ9rGl8dmR0B0BZZ5ONYvNYnX_ZcVqPIAgC5amKgkL4NDwthZ54W7HQXy1hXrWc1_wQxSB-kAjs0sy6US9APK8y6vjXB6Tf6Kd3i2W7IAqm6Pisd7j5tW90"/>
+</div>
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="View from the balcony during golden hour, overlooking the urban landscape of the Dafni neighborhood in Athens." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx-WHcDLNF2IH6XBLy5OSloUHZJ_2lRgpfwRW-Qc1vydGFZc3QGExXxSXyrK-bQOkXcjyZckWGFbIFUuasVwdzzAR6E1fyYk8gFErEKabjb2VLCUprlFLZgiRpX_cjSoNgSeuF3TwtC3fkA1wuFjm4f_a-qMIqvzn0p8k_71BNstTZawrljt8qn34UbFT_dF9r_kkfdlDcokxQ4JsioqfQ-rSWVeqhKJBdbz65FfBANFliyV2K_jI0JimDVlVJP34TEzz8DY33-jw"/>
+</div>
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="A curated shelf with local art books and a small sculptural piece in a minimalist apartment setting." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8KgPSd1cCqHm-ggXQ9tS2HMntB8vnAkPpRBd8JzROsD4AfxIjSBYYFoG1w1gaqdqRSBQtXF-iS46z-Q-jHEFLOq3yw3smlzfphv7krmjbeMkXvqSv-2DSJHuWU_D7NnsYgn9MMI-9T7FbIGKWgSfl_NUvzI_qbAf46Z4KgYEt-j63mosqhjERSiAS3oSm57aza2kJ1jRYn6EjX_vAWOMyN-mrab6WP8Ybvrew_-L_VtsrfzLtBLe5ROMD7hPvTFUIfxzXHbVk6zY"/>
+</div>
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="Dining area with a round wooden table and two designer chairs, positioned under a modern pendant light." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvkhY6qFsWxSF_ocg1FvOA-DJRRp_vOZnUvSGkxRfQsiDi-Vd5ex-0uF34PfhdZiqIm2w-4Wa0NWxlGENV7Xd2bQxcA3yMAx6ThBG_NcExKQHUJT_elmwLSyKvOwF6WcKNIRz91yKhNi35D8kqxVLDJRLGxa32B43dDasDdhlea6uzZZYmpt4mu8mfmT3jr11dCKYVood1KPnbfo-mkWve_i0NaZ-4jg51kOoWYsF_gdPDgJj4-KrIAHQmIHWTMf_dFkc1L0obajg"/>
+</div>
+<div class="aspect-square">
+<img class="w-full h-full object-cover" data-alt="Evening shot of the apartment with warm, ambient lighting creating a cozy urban sanctuary feel." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQs7TGAkaBpZCNZDCpeqWVOG894QJskwLnolhwSQZNXnB-5gETFFLF_CQPOUBOiVq7EW2YRGKlEYU-WwWvp8ADAjoVx200bKry3Yv2RCUO0S92HRKTe2khw0Ot4HZjxQJgUQz8bpOXDakkhpTVvew1cpIgdRwK1aUanf_F3T5WUvCV5Gv3y9wuyUqZaOLCTDGHEV37s-E0P48fWgXZFEy9Xx19B40rCVBJcTY2tqw2HZ4KPc_nAJCQdUMMsqHA5iFfSWv_N5w5jdA"/>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-section-gap">
+<div class="px-margin-mobile max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="order-2 md:order-1">
+<div class="w-full h-[400px] bg-outline-variant grayscale" data-alt="A minimalist map of Athens centered on the Dafni neighborhood, highlighting proximity to the Acropolis and the Metro station with clean line graphics." data-location="Athens" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYA-Mp2jzaxVTXQPQhuDLGypiCd4WWNep3AQyV8b5j5ratsMFkBaQo6sXriA4w77owxYMv246nErasGBaoUF4pwtZUACm_QNtW3XgzCBnSU4uKszu2fMjqEnRMoK-36zw__RFqH-va1yyeQv6p8osHziSA3PwKQhTzOJZkqZSTbdWP3hh9im_FwkOFFG66fLcTle-H0smduEQeYwEB3BOfpTaCGTgcV574NpeIDtEJ79WkPBc8z1OVyP3D-oG9ChpivZq3_FNmA38')"></div>
+</div>
+<div class="order-1 md:order-2 flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md mb-6">Η τοποθεσία</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">directions_subway</span>
+<div>
+<p class="font-label-caps text-label-caps font-bold">METRO DAFNI</p>
+<p class="font-body-md text-on-surface-variant">250 μέτρα - 3 λεπτά με τα πόδια</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">temple_buddhist</span>
+<div>
+<p class="font-label-caps text-label-caps font-bold">ACROPOLIS</p>
+<p class="font-body-md text-on-surface-variant">2.7 χλμ - 8 λεπτά με το Μετρό</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">local_mall</span>
+<div>
+<p class="font-label-caps text-label-caps font-bold">DAFNI SQUARE</p>
+<p class="font-body-md text-on-surface-variant">Εστιατόρια, καφέ και αγορά σε απόσταση αναπνοής</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap px-margin-mobile bg-white">
+<div class="max-w-3xl mx-auto">
+<h3 class="font-headline-md text-headline-md mb-12 text-center">Συχνές Ερωτήσεις</h3>
+<div class="space-y-4">
+<details class="group border-b border-outline-variant pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-headline-sm text-lg">Check-in / Check-out;</span>
+<span class="text-primary font-bold transition-transform group-open:rotate-45">+</span>
+</summary>
+<p class="mt-4 text-on-surface-variant font-body-md">Το check-in πραγματοποιείται μετά τις 15:00 και το check-out έως τις 11:00. Υπάρχει δυνατότητα self check-in με έξυπνη κλειδαριά.</p>
+</details>
+<details class="group border-b border-outline-variant pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-headline-sm text-lg">Επιτρέπονται τα κατοικίδια;</span>
+<span class="text-primary font-bold transition-transform group-open:rotate-45">+</span>
+</summary>
+<p class="mt-4 text-on-surface-variant font-body-md">Λυπούμαστε, αλλά δεν επιτρέπονται τα κατοικίδια στο διαμέρισμα για τη διασφάλιση των προτύπων υγιεινής.</p>
+</details>
+<details class="group border-b border-outline-variant pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-headline-sm text-lg">Υπάρχει χώρος στάθμευσης;</span>
+<span class="text-primary font-bold transition-transform group-open:rotate-45">+</span>
+</summary>
+<p class="mt-4 text-on-surface-variant font-body-md">Υπάρχει ελεύθερο πάρκινγκ στους γύρω δρόμους του διαμερίσματος. Η περιοχή είναι ασφαλής και οικιστική.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap bg-on-background text-white text-center px-margin-mobile">
+<h3 class="font-headline-md text-headline-md mb-8">Έτοιμοι για τη διαμονή σας στην Αθήνα;</h3>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-primary text-white px-8 py-4 font-label-caps text-label-caps tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2" href="mailto:contact@athensresidence.com">
+<span class="material-symbols-outlined text-sm">mail</span> EMAIL US
+                </a>
+<a class="border border-white/30 text-white px-8 py-4 font-label-caps text-label-caps tracking-widest hover:bg-white hover:text-on-background transition-all flex items-center justify-center gap-2" href="https://wa.me/306900000000">
+<span class="material-symbols-outlined text-sm">chat</span> WHATSAPP
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant py-12 px-margin-mobile mb-16">
+<div class="max-w-container-max mx-auto flex flex-col items-center gap-8">
+<h2 class="font-headline-sm text-headline-sm tracking-tighter uppercase">ATHENS RESIDENCE</h2>
+<p class="text-center font-label-caps text-label-caps text-secondary-container">DAFNI, ATHENS, GREECE</p>
+<div class="flex gap-8 font-label-caps text-label-caps text-secondary">
+<a class="hover:text-primary transition-colors" href="#">PRIVACY</a>
+<a class="hover:text-primary transition-colors" href="#">TERMS</a>
+<a class="hover:text-primary transition-colors" href="#">GR/EN</a>
+</div>
+<p class="font-label-caps text-[10px] text-outline mt-4">© 2024 ATHENS RESIDENCE. DESIGNED FOR QUIET LUXURY.</p>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-16 bg-surface border-t border-outline-variant flex justify-around items-center z-50">
+<a class="flex flex-col items-center justify-center text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-caps text-[10px] mt-1">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-container hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">bed</span>
+<span class="font-label-caps text-[10px] mt-1">SUITES</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-container hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-caps text-[10px] mt-1">LOCATION</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-container hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="font-label-caps text-[10px] mt-1">GALLERY</span>
+</a>
+</nav>
+<script>
+        // Smooth transitions for interaction states
+        document.querySelectorAll('button, a').forEach(elem => {
+            elem.addEventListener('mousedown', () => {
+                elem.classList.add('scale-95');
+            });
+            elem.addEventListener('mouseup', () => {
+                elem.classList.remove('scale-95');
+            });
+            elem.addEventListener('mouseleave', () => {
+                elem.classList.remove('scale-95');
+            });
+        });
+
+        // Intersection Observer for simple fade-in effects on images
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0.95';
+            section.style.transform = 'translateY(10px)';
+            section.style.transition = 'all 0.6s ease-out';
+            observer.observe(section);
+        });
+    </script>
+</body></html>
